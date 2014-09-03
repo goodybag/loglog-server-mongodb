@@ -1,6 +1,6 @@
 {
   "name": "loglog-server-mongodb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Loglog server data source for mongodb",
   "main": "index.js",
   "directories": {
