@@ -18,7 +18,8 @@ module.exports = function( options ){
           this.lastResults = results;
         }
 
-        return callback( null, results );
+        // Reverse results so that events are in order
+        return callback( null, results.slice().reverse() );
       }.bind( this ) );
     }
 
