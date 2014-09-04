@@ -13,7 +13,11 @@ module.exports = function( options ){
 
       this.query( query, function( error, results ){
         if ( error ) return callback( error );
-        this.lastResults = results;
+
+        if ( results.length ){
+          this.lastResults = results;
+        }
+
         return callback( null, results );
       }.bind( this ) );
     }
